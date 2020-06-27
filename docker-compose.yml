@@ -29,7 +29,8 @@ services:
     volumes:
       # - ./examples/intro-example/dags:/usr/local/airflow/dags
       - ../2020_yali_dev/DEPLOY_QNA/pipeline_src:/usr/local/airflow/dags
-      - ../2020_yali_dev/DEPLOY_QNA/src:/usr/local/airflow/src
+      # - ../2020_yali_dev/DEPLOY_QNA/src:/usr/local/airflow/src
+      - ../2020_yali_dev/DEPLOY_QNA/base_models:/usr/local/airflow/base_models
       # Uncomment to include custom plugins
       # - ./plugins:/usr/local/airflow/plugins
       
