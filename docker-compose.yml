@@ -30,7 +30,11 @@ services:
       # - ./examples/intro-example/dags:/usr/local/airflow/dags
       - ../2020_yali_dev/DEPLOY_QNA/pipeline_src:/usr/local/airflow/dags
       # - ../2020_yali_dev/DEPLOY_QNA/src:/usr/local/airflow/src
+            
+      ## create the base_models locally and download the models in this dir if you want 
+      ## and if not present already, for correct mapping
       - ../2020_yali_dev/DEPLOY_QNA/base_models:/usr/local/airflow/base_models
+      
       # Uncomment to include custom plugins
       # - ./plugins:/usr/local/airflow/plugins
       
