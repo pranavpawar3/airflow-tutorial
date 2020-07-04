@@ -27,13 +27,16 @@ services:
       - EXECUTOR=Local
       - FERNET_KEY=jsDPRErfv8Z_eVTnGfF8ywd19j4pyqE3NpdUBA_oRTo=
     volumes:
-      # - ./examples/intro-example/dags:/usr/local/airflow/dags
-      - ../2020_yali_dev/DEPLOY_QNA/pipeline_src:/usr/local/airflow/dags
+      # - ../2020_yali_dev/DEPLOY_QNA/pipeline_src:/usr/local/airflow/dags
       # - ../2020_yali_dev/DEPLOY_QNA/src:/usr/local/airflow/src
-            
+      
+      ## for ABInBev Maverick
+      - /home/pranav/ABInBev Maverik/Problem Statement 1/DEV_ROUND_2/API_GIT:/usr/local/airflow/dags
+      - /home/pranav/ABInBev Maverik/Problem Statement 1/DEV_ROUND_2/Round 2:/usr/local/airflow/Round 2
+
       ## create the base_models locally and download the models in this dir if you want 
       ## and if not present already, for correct mapping
-      - ../2020_yali_dev/DEPLOY_QNA/base_models:/usr/local/airflow/base_models
+      # - ../2020_yali_dev/DEPLOY_QNA/base_models:/usr/local/airflow/base_models
       
       # Uncomment to include custom plugins
       # - ./plugins:/usr/local/airflow/plugins
