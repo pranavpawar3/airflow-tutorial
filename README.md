@@ -1,3 +1,5 @@
+**NOTE: The Docker system is inspired from this repo, though we have customized the dockerfile as well as its config for our custom use case.**
+
 Airflow tutorial
 ---
 
